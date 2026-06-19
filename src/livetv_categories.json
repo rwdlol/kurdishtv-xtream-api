@@ -1,0 +1,42 @@
+[
+  {
+    "category_id": "1",
+    "category_name": "General | گشتی",
+    "parent_id": 0
+  },
+  {
+    "category_id": "2",
+    "category_name": "News | هەواڵ",
+    "parent_id": 0
+  },
+  {
+    "category_id": "3",
+    "category_name": "Sports | وەرزش",
+    "parent_id": 0
+  },
+  {
+    "category_id": "4",
+    "category_name": "Movies | فیلمەکان",
+    "parent_id": 0
+  },
+  {
+    "category_id": "5",
+    "category_name": "Documentary | بەڵگەنامە",
+    "parent_id": 0
+  },
+  {
+    "category_id": "6",
+    "category_name": "Kids | منداڵان",
+    "parent_id": 0
+  },
+  {
+    "category_id": "7",
+    "category_name": "Music | مۆسیقا",
+    "parent_id": 0
+  },
+  {
+    "category_id": "8",
+    "category_name": "Religious | ئاینی",
+    "parent_id": 0
+  }
+]

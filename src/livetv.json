@@ -1,0 +1,74 @@
+[
+  {
+    "category_id": "2",
+    "name": "Ava News 720p",
+    "stream_icon": "ava-news.jpg",
+    "direct_source": "https://ava2.store/upload/images/720.m3u8"
+  },
+  {
+    "category_id": "2",
+    "name": "Ava News 1080p",
+    "stream_icon": "ava-news.jpg",
+    "direct_source": "https://ava2.store/upload/images/1080.m3u8"
+  },
+  {
+    "category_id": "2",
+    "name": "Rudaw 1080p",
+    "stream_icon": "rudaw.jpg",
+    "direct_source": "https://live.rudaw.net/hls/rudaw-tv/master.m3u8"
+  },
+  {
+    "category_id": "2",
+    "name": "Shams TV 1080p",
+    "stream_icon": "shams-tv.jpg",
+    "direct_source": "https://stream.shams.tv/hls/stream.m3u8"
+  },
+  {
+    "category_id": "2",
+    "name": "Kurdistan 24 FHD",
+    "stream_icon": "kurdistan24.jpg",
+    "direct_source": "https://d1x82nydcxndze.cloudfront.net/live/index.m3u8"
+  },
+  {
+    "category_id": "2",
+    "name": "Channel 8 1080p",
+    "stream_icon": "channel8.jpg",
+    "direct_source": "https://live.channel8.com/Channel8-Kurdish/index.m3u8"
+  },
+  {
+    "category_id": "1",
+    "name": "Testing",
+    "stream_icon": "ads.jpg",
+    "direct_source": "https://xtream.rwd.lol/public/video/ads.mp4"
+  },
+  {
+    "category_id": "3",
+    "name": "Testing",
+    "stream_icon": "ads.jpg",
+    "direct_source": "https://xtream.rwd.lol/public/video/ads.mp4"
+  },
+  {
+    "category_id": "4",
+    "name": "Testing",
+    "stream_icon": "ads.jpg",
+    "direct_source": "https://xtream.rwd.lol/public/video/ads.mp4"
+  },
+  {
+    "category_id": "5",
+    "name": "Testing",
+    "stream_icon": "ads.jpg",
+    "direct_source": "https://xtream.rwd.lol/public/video/ads.mp4"
+  },
+  {
+    "category_id": "7",
+    "name": "Testing",
+    "stream_icon": "ads.jpg",
+    "direct_source": "https://xtream.rwd.lol/public/video/ads.mp4"
+  },
+  {
+    "category_id": "8",
+    "name": "Testing",
+    "stream_icon": "ads.jpg",
+    "direct_source": "https://xtream.rwd.lol/public/video/ads.mp4"
+  }
+]

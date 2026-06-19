@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Kurdish TV legal Xtream API</title>
+    <meta
+      name="description"
+      content="This is a free and legal Xtream API for Kurdish TV channels. It provides access to a variety of Kurdish TV channels, including news, entertainment, and sports channels."
+    />
+    <style>
+      body {
+        max-width: 1024px;
+        margin: 24px auto;
+        padding: 0 16px;
+        font-family: system-ui, sans-serif;
+        line-height: 1.45;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 12px 0 24px;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 6px 8px;
+        text-align: left;
+        vertical-align: top;
+      }
+      th {
+        background: #f5f5f5;
+      }
+      pre {
+        padding: 10px;
+        overflow-x: auto;
+        background: #f5f5f5;
+      }
+      code {
+        font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+        font-size: 0.95em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Free Kurdish TV Xtream API</h1>
+
+    <p>
+      This is a free and legal Xtream API for Kurdish TV channels. It provides
+      access to a variety of Kurdish TV channels, including news, entertainment,
+      and sports channels.
+    </p>
+
+    <p>
+      <strong>IMPORTANT!</strong> All links are public links sourced directly
+      from the original providers of the live TV streams. WE ARE NOT
+      HOSTING/STREAMING!
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>data</th>
+          <th>value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>name</td>
+          <td>rwdlol</td>
+        </tr>
+        <tr>
+          <td>username</td>
+          <td>rwdlol</td>
+        </tr>
+        <tr>
+          <td>password</td>
+          <td>rwdlol</td>
+        </tr>
+        <tr>
+          <td>url</td>
+          <td>https://xtream.rwd.lol</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Xtream API Documentation</h2>
+
+    <h3>Auth</h3>
+    <pre><code>GET &lt;url&gt;/player_api.php?username=&lt;user&gt;&amp;password=&lt;pwd&gt;</code></pre>
+
+    <h3>M3U</h3>
+    <pre><code>GET &lt;url&gt;/get.php?username=&lt;user&gt;&amp;password=&lt;pwd&gt;&amp;type=m3u_plus&amp;output=ts</code></pre>
+    <pre><code>GET &lt;url&gt;/get.php?username=&lt;user&gt;&amp;password=&lt;pwd&gt;&amp;type=m3u_plus&amp;output=m3u8</code></pre>
+
+    <h3>Live TV</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Endpoint</th>
+          <th>URL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>All Streams</td>
+          <td>
+            <code
+              >/player_api.php?username=&lt;user&gt;&amp;password=&lt;pwd&gt;&amp;action=get_live_streams</code
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Categories</td>
+          <td>
+            <code
+              >/player_api.php?username=&lt;user&gt;&amp;password=&lt;pwd&gt;&amp;action=get_live_categories</code
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>By Category</td>
+          <td>
+            <code
+              >/player_api.php?username=&lt;user&gt;&amp;password=&lt;pwd&gt;&amp;action=get_live_streams&amp;category_id=&lt;id&gt;</code
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Movies (VOD)</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Endpoint</th>
+          <th>URL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>All Streams</td>
+          <td>
+            <code
+              >/player_api.php?username=&lt;user&gt;&amp;password=&lt;pwd&gt;&amp;action=get_vod_streams</code
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Categories</td>
+          <td>
+            <code
+              >/player_api.php?username=&lt;user&gt;&amp;password=&lt;pwd&gt;&amp;action=get_vod_categories</code
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>By Category</td>
+          <td>
+            <code
+              >/player_api.php?username=&lt;user&gt;&amp;password=&lt;pwd&gt;&amp;action=get_vod_streams&amp;category_id=&lt;id&gt;</code
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Details</td>
+          <td>
+            <code
+              >/player_api.php?username=&lt;user&gt;&amp;password=&lt;pwd&gt;&amp;action=get_vod_info&amp;vod_id=&lt;id&gt;</code
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Series (TV Shows)</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Endpoint</th>
+          <th>URL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>All Series</td>
+          <td>
+            <code
+              >/player_api.php?username=&lt;user&gt;&amp;password=&lt;pwd&gt;&amp;action=get_series</code
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Categories</td>
+          <td>
+            <code
+              >/player_api.php?username=&lt;user&gt;&amp;password=&lt;pwd&gt;&amp;action=get_series_categories</code
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>By Category</td>
+          <td>
+            <code
+              >/player_api.php?username=&lt;user&gt;&amp;password=&lt;pwd&gt;&amp;action=get_series&amp;category_id=&lt;id&gt;</code
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Details</td>
+          <td>
+            <code
+              >/player_api.php?username=&lt;user&gt;&amp;password=&lt;pwd&gt;&amp;action=get_series_info&amp;series=&lt;id&gt;</code
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
