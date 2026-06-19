@@ -49,9 +49,9 @@ app.use((_req, res, next) => {
   next();
 });
 
-app.get("/", (_req, res) => {
-  res.sendFile(path.join(__dirname, "..", "public", "index.html"));
-});
+// app.get("/", (_req, res) => {
+//   res.sendFile(path.join(__dirname, "..", "public", "index.html"));
+// });
 
 app.get("/player_api.php", (req: Request, res: Response) => {
   const { username, password, action, category_id } = req.query;
@@ -234,4 +234,6 @@ async function liveHandler(req: Request, res: Response) {
   }
 }
 
-// app.listen(3000, "0.0.0.0");
+app.listen(3000, "0.0.0.0");
+
+export default app;
