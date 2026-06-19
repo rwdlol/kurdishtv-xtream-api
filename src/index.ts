@@ -37,7 +37,7 @@ const LiveTVCategoryList: LiveTVCategoryItem[] = JSON.parse(
   fs.readFileSync(path.join(__dirname, "livetv_categories.json"), "utf8"),
 );
 
-app.use("/public", express.static("public"));
+// app.use(express.static("public"));
 
 app.use((_req, res, next) => {
   res.setHeader(
@@ -50,7 +50,7 @@ app.use((_req, res, next) => {
 });
 
 app.get("/", (_req, res) => {
-  res.sendFile(path.join(__dirname, "home.html"));
+  res.sendFile(path.join(__dirname, "..", "public", "index.html"));
 });
 
 app.get("/player_api.php", (req: Request, res: Response) => {
@@ -72,7 +72,7 @@ app.get("/player_api.php", (req: Request, res: Response) => {
         stream_id: Number(STREAM_ID),
         category_id: String(item.category_id),
         name: String(item.name),
-        stream_icon: `${req.protocol}://${req.get("host")}/public/logo/${item.stream_icon}`,
+        stream_icon: `${req.protocol}://${req.get("host")}/logo/${item.stream_icon}`,
         direct_source: "",
         added: "1780264800",
         custom_sid: "",
