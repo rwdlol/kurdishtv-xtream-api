@@ -37,7 +37,7 @@ const LiveTVCategoryList: LiveTVCategoryItem[] = JSON.parse(
   fs.readFileSync(path.join(__dirname, "livetv_categories.json"), "utf8"),
 );
 
-// app.use(express.static("public"));
+app.use(express.static("public"));
 
 app.use((_req, res, next) => {
   res.setHeader(
@@ -49,9 +49,9 @@ app.use((_req, res, next) => {
   next();
 });
 
-// app.get("/", (_req, res) => {
-//   res.sendFile(path.join(__dirname, "..", "public", "index.html"));
-// });
+app.get("/", (_req, res) => {
+  res.sendFile(path.join(__dirname, "..", "public", "index.html"));
+});
 
 app.get("/player_api.php", (req: Request, res: Response) => {
   const { username, password, action, category_id } = req.query;
@@ -101,7 +101,7 @@ app.get("/player_api.php", (req: Request, res: Response) => {
       password: PASSWORD,
       status: "Active",
       exp_date: "1893456000",
-      allowed_output_formats: ["m3u8", "ts", "mp4"],
+      allowed_output_formats: ["m3u8", "ts"],
     },
     server_info: {
       url: serverUrl,
